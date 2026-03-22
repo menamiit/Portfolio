@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, Github, Linkedin, Send, MapPin } from 'lucide-react'
+import { Mail, Github, Linkedin, Send, MapPin, Code2 } from 'lucide-react'
 import SectionWrapper, { fadeUp } from '../ui/SectionWrapper'
 
 interface FormData {
@@ -21,16 +21,17 @@ export default function Contact() {
     e.preventDefault()
     const subject = encodeURIComponent(`Portfolio Contact — ${form.name}`)
     const body    = encodeURIComponent(`Hi,\n\n${form.message}\n\nFrom: ${form.name}\nEmail: ${form.email}`)
-    window.open(`mailto:you@example.com?subject=${subject}&body=${body}`, '_blank')
+    window.open(`mailto:pareeknamit8@gmail.com?subject=${subject}&body=${body}`, '_blank')
     setSent(true)
     setTimeout(() => setSent(false), 4000)
   }
 
   const socials = [
-    { icon: Mail,     label: 'you@example.com', href: 'mailto:you@example.com' },
-    { icon: Github,   label: 'github.com/you',  href: 'https://github.com' },
-    { icon: Linkedin, label: 'linkedin.com/in/you', href: 'https://linkedin.com' },
-    { icon: MapPin,   label: 'San Francisco, CA', href: '#' },
+    { icon: Mail,     label: 'pareeknamit8@gmail.com', href: 'mailto:pareeknamit8@gmail.com' },
+    { icon: Github,   label: 'github.com/menamiit',  href: 'https://github.com/menamiit' },
+    { icon: Linkedin, label: 'linkedin.com/in/namit-pareek', href: 'https://linkedin.com/in/namit-pareek' },
+    { icon: Code2, label: 'leetcode.com/u/namiit', href: 'https://leetcode.com/u/namiit/' },
+    { icon: MapPin,   label: 'Punjab, India', href: '#' },
   ]
 
   const inputBase =

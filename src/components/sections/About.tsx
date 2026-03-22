@@ -1,11 +1,9 @@
 import { motion } from 'framer-motion'
 import SectionWrapper, { fadeUp } from '../ui/SectionWrapper'
-import { Code2, Globe, Cpu } from 'lucide-react'
+import { Globe } from 'lucide-react'
 
 const highlights = [
-  { icon: Code2, title: '5+ Years Experience',  desc: 'Building production-grade web applications end-to-end.' },
-  { icon: Globe, title: '15+ Projects Shipped', desc: 'From startup MVPs to enterprise platforms at scale.' },
-  { icon: Cpu,   title: 'Open-Source Advocate', desc: 'Regular contributor to public repos and npm packages.' },
+  { icon: Globe, title: 'Data-Driven Builder', desc: 'Focused on analytics, backend APIs, and scalable data workflows.' },
 ]
 
 export default function About() {
@@ -44,19 +42,38 @@ export default function About() {
           </h3>
 
           <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-            I'm a full-stack software engineer with 5+ years of experience designing and shipping
-            scalable web applications. I specialize in <strong className="text-primary-600 dark:text-primary-400">React, Node.js, and cloud infrastructure</strong>,
-            and I care deeply about performance, developer experience, and clean code.
+            Computer Science student focused on data analytics, machine learning, and backend systems.
           </p>
 
           <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-            When I'm not coding, you'll find me contributing to open-source projects, writing
-            technical blog posts, or leveling up my knowledge on distributed systems and system design.
-            I believe great software comes from curiosity, collaboration, and attention to detail.
+            I am a Computer Science student with a strong interest in data analytics,
+            machine learning, and backend development. I have experience working with
+            Python, SQL, and Power BI to analyze datasets and extract meaningful insights.
+            I have built data-driven projects involving exploratory data analysis,
+            predictive modeling, and dashboard development.
+          </p>
+
+          <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+            Alongside this, I have experience in backend development using Node.js and
+            Spring Boot, allowing me to design systems that efficiently collect, process,
+            and serve data. I am particularly interested in solving real-world problems by
+            combining data analysis with scalable system design.
           </p>
 
           <div className="flex flex-wrap gap-3 pt-2">
-            {['Problem Solver', 'Team Player', 'Lifelong Learner', 'Open-Source Contributor'].map((tag) => (
+            {[
+              'Data Analysis and EDA',
+              'SQL and Data Querying',
+              'Problem Solving and Analytical Thinking',
+              'Backend Development and API Design',
+              'Data Visualization and Dashboarding',
+            ].map((tag) => (
+              <span key={tag} className="badge">{tag}</span>
+            ))}
+          </div>
+
+          <div className="flex flex-wrap gap-3 pt-1">
+            {['Data Analytics', 'Machine Learning', 'Data Engineering', 'Backend Development', 'Building Data-Driven Systems'].map((tag) => (
               <span key={tag} className="badge">{tag}</span>
             ))}
           </div>

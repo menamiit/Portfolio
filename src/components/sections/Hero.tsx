@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion'
 import { Link as ScrollLink } from 'react-scroll'
-import { Github, Linkedin, Download, ArrowDown } from 'lucide-react'
+import { Github, Linkedin, Download, ArrowDown, Code2 } from 'lucide-react'
 import ParticleBackground from '../ui/ParticleBackground'
+import generalisedCv from './GeneralisedCV.pdf'
 
 export default function Hero() {
   return (
@@ -55,7 +56,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-xl sm:text-2xl font-mono font-medium text-slate-600 dark:text-slate-300 mb-4"
         >
-          Full-Stack Engineer &amp; Open-Source Contributor
+          Data Analyst | Backend Development
         </motion.p>
 
         {/* Tagline */}
@@ -65,8 +66,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="max-w-2xl mx-auto text-slate-500 dark:text-slate-400 text-lg mb-10"
         >
-          I build fast, scalable, and beautiful web applications. Passionate about
-          clean architecture, developer experience, and pushing the boundaries of the web.
+          I build data-driven applications, extract meaningful insights, and design systems
+          that turn raw data into actionable decisions.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -83,7 +84,7 @@ export default function Hero() {
             </button>
           </ScrollLink>
 
-          <a href="/resume.pdf" download className="btn-outline">
+          <a href={generalisedCv} download="GeneralisedCV.pdf" className="btn-outline">
             <Download size={16} />
             Download CV
           </a>
@@ -97,8 +98,9 @@ export default function Hero() {
           className="flex items-center justify-center gap-4"
         >
           {[
-            { icon: Github,   href: 'https://github.com',    label: 'GitHub' },
-            { icon: Linkedin, href: 'https://linkedin.com',  label: 'LinkedIn' },
+            { icon: Github,   href: 'https://github.com/menamiit',    label: 'GitHub' },
+            { icon: Linkedin, href: 'https://www.linkedin.com/in/namit-pareek/',  label: 'LinkedIn' },
+            { icon: Code2, href: 'https://leetcode.com/u/namiit/', label: 'LeetCode' },
           ].map(({ icon: Icon, href, label }) => (
             <a
               key={label}

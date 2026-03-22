@@ -12,56 +12,39 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'AI-Powered Task Manager',
+    title: 'NYC Airbnb Data Analytics Dashboard',
     description:
-      'A full-stack productivity app that uses GPT-4 to auto-prioritize tasks, suggest deadlines, and generate daily summaries. Built with a React frontend and a Node.js/PostgreSQL backend.',
-    techStack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'OpenAI API', 'Tailwind CSS'],
-    github: 'https://github.com',
-    live: 'https://example.com',
+      'Developed an interactive dashboard using Power BI and SQL to analyze pricing trends, occupancy patterns, and host behavior, generating actionable business insights.',
+    techStack: ['Power BI', 'SQL'],
+    github: 'https://github.com/menamiit/CO2-Footprint-Tracker',
     featured: true,
   },
   {
     id: 2,
-    title: 'Real-Time Chat Application',
+    title: 'Mobile Network Performance Analysis and Prediction',
     description:
-      'Scalable websocket-based chat app supporting rooms, direct messages, read receipts, and file uploads. Deployed on AWS with auto-scaling.',
-    techStack: ['React', 'Socket.IO', 'Express', 'Redis', 'MongoDB', 'AWS'],
-    github: 'https://github.com',
-    live: 'https://example.com',
+      'Performed exploratory data analysis and built regression models using Python and Scikit-learn to analyze network performance and predict key metrics.',
+    techStack: ['Python', 'Pandas', 'Scikit-learn'],
+    github: 'https://github.com/menamiit/EDA-Mobile-Network-Experience',
     featured: true,
   },
   {
     id: 3,
-    title: 'DevOps Dashboard',
+    title: 'Real-Time System Monitoring Dashboard',
     description:
-      'Internal monitoring platform visualizing CI/CD pipeline metrics, deployment history, and infrastructure health using live WebSocket feeds from GitHub Actions and AWS CloudWatch.',
-    techStack: ['React', 'Redux', 'D3.js', 'FastAPI', 'Docker', 'Kubernetes'],
-    github: 'https://github.com',
+      'Built a real-time data pipeline using Node.js and WebSockets to collect, process, and visualize system performance metrics.',
+    techStack: ['Node.js', 'React', 'MongoDB', 'Socket.io'],
+    github: 'https://github.com/menamiit/Real-Time-Server-Monitoring-Dashboard',
     featured: true,
   },
   {
     id: 4,
-    title: 'E-Commerce Microservices Platform',
+    title: 'Smart City Grievance Analytics Platform',
     description:
-      'Production-grade e-commerce backend decomposed into microservices (auth, catalog, orders, payments) with an API gateway, event-driven communication via Kafka, and Stripe integration.',
-    techStack: ['Node.js', 'Kafka', 'gRPC', 'PostgreSQL', 'Redis', 'Docker', 'Stripe'],
-    github: 'https://github.com',
-  },
-  {
-    id: 5,
-    title: 'Open-Source CLI Toolkit',
-    description:
-      'A developer productivity CLI with commands for scaffolding projects, managing environment configs, and syncing dotfiles across machines. Published to npm with 500+ weekly downloads.',
-    techStack: ['TypeScript', 'Node.js', 'Commander.js', 'Inquirer', 'npm'],
-    github: 'https://github.com',
-    live: 'https://npmjs.com',
-  },
-  {
-    id: 6,
-    title: 'Portfolio Website',
-    description:
-      'This very portfolio — a visually engaging single-page React application featuring particle animations, 3D card effects, dark/light theme, and smooth scroll navigation.',
-    techStack: ['React', 'TypeScript', 'Redux', 'Tailwind CSS', 'Framer Motion', 'Vite'],
-    github: 'https://github.com',
+      'Developed a full-stack platform with analytics modules to track complaint distribution, SLA performance, and identify high-frequency issue zones using SQL and dashboards.',
+    techStack: ['Spring Boot', 'SQL', 'Chart.js', 'JavaScript'],
+    github: 'https://github.com/menamiit/smart-city-project',
+    live: 'https://github.com/menamiit/smart-city-project',
+    featured: true,
   },
 ]

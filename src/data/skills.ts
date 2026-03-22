@@ -6,28 +6,28 @@ export interface SkillCategory {
 
 export const skillCategories: SkillCategory[] = [
   {
+    category: 'Languages',
+    icon: '💻',
+    skills: ['Python', 'Java', 'JavaScript', 'C++', 'SQL'],
+  },
+  {
     category: 'Frontend',
     icon: '🖥️',
-    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Redux', 'HTML5', 'CSS3', 'Framer Motion'],
+    skills: ['React', 'HTML', 'CSS', 'Bootstrap', 'Tailwind CSS'],
   },
   {
     category: 'Backend',
     icon: '⚙️',
-    skills: ['Node.js', 'Express', 'FastAPI', 'Python', 'REST APIs', 'GraphQL', 'WebSockets', 'gRPC'],
+    skills: ['Node.js', 'Express.js', 'Spring Boot'],
   },
   {
     category: 'Databases',
     icon: '🗄️',
-    skills: ['PostgreSQL', 'MongoDB', 'Redis', 'MySQL', 'Prisma', 'Mongoose', 'Elasticsearch'],
-  },
-  {
-    category: 'DevOps & Cloud',
-    icon: '☁️',
-    skills: ['Docker', 'Kubernetes', 'AWS', 'GitHub Actions', 'CI/CD', 'Terraform', 'Nginx', 'Linux'],
+    skills: ['MongoDB', 'MySQL'],
   },
   {
     category: 'Tools',
     icon: '🛠️',
-    skills: ['Git', 'VS Code', 'Postman', 'Figma', 'Jira', 'Webpack', 'Vite', 'ESLint'],
+    skills: ['Power BI', 'Git', 'GitHub', 'Jupyter Notebook', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib'],
   },
 ]

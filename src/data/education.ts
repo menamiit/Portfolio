@@ -12,16 +12,10 @@ export interface Education {
 export const education: Education[] = [
   {
     id: 1,
-    institution: 'University of Technology',
-    degree: "Bachelor's of Science",
-    field: 'Computer Science',
-    startYear: '2015',
-    endYear: '2019',
-    gpa: '3.8 / 4.0',
-    highlights: [
-      "Dean's List — 6 semesters",
-      'Senior Thesis: Distributed Consensus Algorithms in IoT Networks',
-      'Lead developer for university hackathon-winning team (2018)',
-    ],
+    institution: 'Lovely Professional University',
+    degree: 'Bachelor of Technology',
+    field: 'Computer Science and Engineering',
+    startYear: '2023',
+    endYear: 'Present',
   },
 ]
