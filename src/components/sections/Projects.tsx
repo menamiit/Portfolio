@@ -6,18 +6,18 @@ import { projects } from '../../data/projects'
 
 export default function Projects() {
   return (
-    <SectionWrapper id="projects" className="bg-white dark:bg-[#0f1629]/50">
+    <SectionWrapper id="projects" className="section-alt">
       <motion.div variants={fadeUp} className="text-center mb-12">
         <div className="section-divider mx-auto" />
         <h2 className="section-heading">Featured <span className="gradient-text">Projects</span></h2>
         <p className="section-subheading">Things I've built that I'm proud of</p>
       </motion.div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
         {projects.map((project) => (
           <motion.div key={project.id} variants={fadeUp}>
             <TiltCard className="h-full">
-              <div className="card p-6 h-full flex flex-col gap-4 hover:border-primary-400/60 dark:hover:border-primary-600/60 transition-colors duration-300">
+              <div className="card p-4 md:p-6 h-full flex flex-col gap-4 hover:border-primary-400/60 dark:hover:border-primary-600/60 transition-colors duration-300">
                 {/* Header */}
                 <div className="flex items-start justify-between">
                   <div className="p-2.5 rounded-xl bg-primary-100 dark:bg-primary-900/40">

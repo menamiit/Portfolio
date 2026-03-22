@@ -26,7 +26,7 @@ export default function SectionWrapper({ id, children, className = '' }: Props) 
   const inView  = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id={id} ref={ref} className={`py-20 px-4 sm:px-6 lg:px-8 ${className}`}>
+    <section id={id} ref={ref} className={`relative section-shell py-16 md:py-24 px-4 sm:px-6 lg:px-8 ${className}`}>
       <div className="max-w-7xl mx-auto">
         <motion.div
           variants={container}

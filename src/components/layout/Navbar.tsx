@@ -30,7 +30,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/80 dark:bg-[#0a0f1e]/80 backdrop-blur-md shadow-md'
+          ? 'bg-[#f5f1e6] dark:bg-[#0f0f12] border-b-4 border-black dark:border-white'
           : 'bg-transparent'
       }`}
     >
@@ -54,10 +54,9 @@ export default function Navbar() {
                 smooth
                 duration={500}
                 offset={-64}
-                className="relative px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300
-                           hover:text-primary-600 dark:hover:text-primary-400 cursor-pointer
-                           transition-colors rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/50"
-                activeClass="text-primary-600 dark:text-primary-400"
+                className="relative px-3 py-2 text-sm font-bold uppercase text-black dark:text-white
+                           cursor-pointer transition-colors border-2 border-transparent hover:border-black dark:hover:border-white"
+                activeClass="text-black dark:text-white"
                 spy
               >
                 {label}
@@ -71,16 +70,16 @@ export default function Navbar() {
           <button
             onClick={() => dispatch(toggleTheme())}
             aria-label="Toggle theme"
-            className="p-2 rounded-xl text-slate-600 dark:text-slate-300
-                       hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-colors"
+            className="p-2 border-2 border-black dark:border-white text-black dark:text-white
+                       hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
           >
             {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
           </button>
 
           <button
             onClick={() => setMobileOpen((v) => !v)}
-            className="md:hidden p-2 rounded-xl text-slate-600 dark:text-slate-300
-                       hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-colors"
+            className="md:hidden p-2 border-2 border-black dark:border-white text-black dark:text-white
+                       hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X size={20} /> : <Menu size={20} />}
@@ -90,7 +89,7 @@ export default function Navbar() {
 
       {/* Mobile drawer */}
       {mobileOpen && (
-        <div className="md:hidden bg-white dark:bg-[#0f1629] border-b border-slate-200 dark:border-[#1e2a45] px-4 pb-4">
+        <div className="md:hidden bg-[#f5f1e6] dark:bg-[#0f0f12] border-b-4 border-black dark:border-white px-4 pb-4">
           <ul className="flex flex-col gap-1 pt-2">
             {navLinks.map(({ label, to }) => (
               <li key={to}>
@@ -100,8 +99,8 @@ export default function Navbar() {
                   duration={500}
                   offset={-64}
                   onClick={() => setMobileOpen(false)}
-                  className="block px-4 py-2 text-sm font-medium text-slate-700 dark:text-slate-200
-                             hover:bg-slate-100 dark:hover:bg-slate-800/60 rounded-lg cursor-pointer transition-colors"
+                  className="block px-4 py-2 text-sm font-bold uppercase text-black dark:text-white
+                             border-2 border-transparent hover:border-black dark:hover:border-white cursor-pointer transition-colors"
                 >
                   {label}
                 </ScrollLink>

@@ -1,21 +1,23 @@
 import { motion } from 'framer-motion'
 import SectionWrapper, { fadeUp } from '../ui/SectionWrapper'
-import { Globe } from 'lucide-react'
+import { Globe, Database, ServerCog } from 'lucide-react'
 
 const highlights = [
   { icon: Globe, title: 'Data-Driven Builder', desc: 'Focused on analytics, backend APIs, and scalable data workflows.' },
+  { icon: Database, title: 'Insight-Focused Analyst', desc: 'Experienced with SQL, EDA, and dashboarding to translate data into decisions.' },
+  { icon: ServerCog, title: 'Backend System Designer', desc: 'Builds structured services and workflows with Node.js and Spring Boot.' },
 ]
 
 export default function About() {
   return (
-    <SectionWrapper id="about" className="bg-white dark:bg-[#0f1629]/50">
+    <SectionWrapper id="about" className="section-alt">
       <motion.div variants={fadeUp} className="text-center mb-12">
         <div className="section-divider mx-auto" />
         <h2 className="section-heading">About <span className="gradient-text">Me</span></h2>
         <p className="section-subheading">A bit about who I am and what I do</p>
       </motion.div>
 
-      <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
         {/* Avatar / visual side */}
         <motion.div variants={fadeUp} className="flex justify-center lg:justify-end">
           <div className="relative group">
@@ -81,12 +83,12 @@ export default function About() {
       </div>
 
       {/* Highlights row */}
-      <div className="grid sm:grid-cols-3 gap-6 mt-16">
+      <div className="grid sm:grid-cols-3 gap-4 md:gap-6 mt-12 md:mt-16">
         {highlights.map(({ icon: Icon, title, desc }) => (
           <motion.div
             key={title}
             variants={fadeUp}
-            className="card p-6 flex gap-4 items-start hover:border-primary-400/50 dark:hover:border-primary-600/50 transition-colors"
+            className="card p-6 flex flex-col gap-4 items-center text-center hover:border-primary-400/50 dark:hover:border-primary-600/50 transition-colors"
           >
             <div className="p-2.5 rounded-xl bg-primary-100 dark:bg-primary-900/40 shrink-0">
               <Icon size={20} className="text-primary-600 dark:text-primary-400" />

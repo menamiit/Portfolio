@@ -35,21 +35,19 @@ export default function Contact() {
   ]
 
   const inputBase =
-    'w-full px-4 py-3 rounded-xl text-sm border bg-white dark:bg-slate-800/60 ' +
-    'border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 ' +
-    'placeholder-slate-400 dark:placeholder-slate-500 ' +
-    'focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500 ' +
-    'transition-all duration-200'
+    'w-full px-3 md:px-4 py-2.5 md:py-3 text-sm border-2 border-black dark:border-white ' +
+    'bg-white dark:bg-black text-black dark:text-white placeholder-zinc-500 dark:placeholder-zinc-400 ' +
+    'focus:outline-none focus:ring-0 transition-all duration-200'
 
   return (
-    <SectionWrapper id="contact" className="bg-white dark:bg-[#0f1629]/50">
+    <SectionWrapper id="contact" className="section-alt">
       <motion.div variants={fadeUp} className="text-center mb-12">
         <div className="section-divider mx-auto" />
         <h2 className="section-heading">Get In <span className="gradient-text">Touch</span></h2>
         <p className="section-subheading">Have a project in mind? Let's talk.</p>
       </motion.div>
 
-      <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+      <div className="grid lg:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
         {/* Left — info */}
         <motion.div variants={fadeUp} className="space-y-6">
           <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -64,7 +62,7 @@ export default function Contact() {
                 href={href}
                 target={href.startsWith('http') ? '_blank' : undefined}
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 card rounded-xl
+                className="flex items-center gap-4 p-3 md:p-4 card rounded-xl
                            hover:border-primary-400/50 dark:hover:border-primary-600/50
                            transition-all duration-200 group"
               >
@@ -82,7 +80,7 @@ export default function Contact() {
 
         {/* Right — form */}
         <motion.div variants={fadeUp}>
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-3 md:space-y-4">
             <div className="grid sm:grid-cols-2 gap-4">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-slate-700 dark:text-slate-200 mb-1.5">

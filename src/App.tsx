@@ -24,7 +24,7 @@ function App() {
   }, [theme])
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-[#0a0f1e] transition-colors duration-300">
+    <div className="min-h-screen bg-[#f5f1e6] dark:bg-[#0f0f12] transition-colors duration-300">
       <Navbar />
       <main>
         <Hero />

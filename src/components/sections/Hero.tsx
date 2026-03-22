@@ -9,15 +9,16 @@ export default function Hero() {
     <section
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden
-                 bg-gradient-to-br from-slate-50 via-slate-100 to-primary-50
-                 dark:from-[#0a0f1e] dark:via-[#0d1530] dark:to-[#0a1628]"
+                 bg-transparent"
     >
       <ParticleBackground />
 
       {/* Glow blobs */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        <div className="absolute top-1/4 -left-20 w-96 h-96 bg-primary-500/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-accent-500/15 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 -left-20 w-96 h-96 bg-red-500/15 dark:bg-blue-500/15 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-red-500/15 dark:bg-blue-500/15 rounded-full blur-3xl" />
+        <div className="absolute top-16 right-10 w-20 h-20 border-4 border-black dark:border-white bg-red-500 dark:bg-blue-500" />
+        <div className="absolute bottom-20 left-8 w-14 h-14 border-4 border-black dark:border-white bg-white dark:bg-black" />
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
@@ -26,14 +27,12 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
-                     border border-primary-300/50 dark:border-primary-700/50
-                     bg-primary-50 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300
-                     text-sm font-medium mb-6"
+          className="inline-flex items-center gap-2 px-4 py-2 mb-6 text-xs md:text-sm font-extrabold uppercase tracking-wider
+                     border-4 border-black dark:border-white bg-white text-black dark:bg-black dark:text-white"
         >
           <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-500 opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-600" />
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-black dark:bg-white opacity-75" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-black dark:bg-white" />
           </span>
           Available for opportunities
         </motion.div>
@@ -43,7 +42,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-4"
+          className="text-5xl sm:text-6xl md:text-7xl font-black uppercase tracking-tight mb-4"
         >
           Hi, I'm{' '}
           <span className="gradient-text">Namit Pareek</span>
@@ -54,7 +53,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-xl sm:text-2xl font-mono font-medium text-slate-600 dark:text-slate-300 mb-4"
+          className="text-xl sm:text-2xl font-mono font-extrabold text-zinc-700 dark:text-zinc-200 mb-4 uppercase"
         >
           Data Analyst | Backend Development
         </motion.p>
@@ -64,7 +63,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="max-w-2xl mx-auto text-slate-500 dark:text-slate-400 text-lg mb-10"
+          className="max-w-2xl mx-auto text-zinc-700 dark:text-zinc-300 text-lg mb-10 font-medium"
         >
           I build data-driven applications, extract meaningful insights, and design systems
           that turn raw data into actionable decisions.
@@ -108,12 +107,10 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={label}
-              className="p-3 rounded-xl border border-slate-200 dark:border-slate-700
-                         bg-white/60 dark:bg-slate-800/40 backdrop-blur-sm
-                         text-slate-600 dark:text-slate-300
-                         hover:text-primary-600 dark:hover:text-primary-400
-                         hover:border-primary-400 dark:hover:border-primary-600
-                         transition-all duration-200 hover:scale-110"
+              className="p-3 border-4 border-black dark:border-white bg-white dark:bg-[#16161a]
+                         text-black dark:text-white transition-all duration-150
+                         hover:-translate-x-1 hover:-translate-y-1"
+              style={{ boxShadow: '4px 4px 0 currentColor' }}
             >
               <Icon size={20} />
             </a>
