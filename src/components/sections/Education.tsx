@@ -29,13 +29,13 @@ export default function Education() {
                     </p>
                   </div>
                   <div className="text-sm font-mono text-slate-500 dark:text-slate-400 shrink-0">
-                    {edu.startYear} – {edu.endYear}
+                    {edu.startYear === edu.endYear ? edu.startYear : `${edu.startYear} – ${edu.endYear}`}
                   </div>
                 </div>
 
                 {edu.gpa && (
                   <p className="text-sm text-slate-600 dark:text-slate-300 mb-3">
-                    GPA: <span className="font-semibold text-accent-500">{edu.gpa}</span>
+                    Score: <span className="font-semibold text-accent-500">{edu.gpa}</span>
                   </p>
                 )}
 

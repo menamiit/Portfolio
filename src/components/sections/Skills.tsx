@@ -11,12 +11,16 @@ export default function Skills() {
         <p className="section-subheading">Technologies I work with day-to-day</p>
       </motion.div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
-        {skillCategories.map(({ category, icon, skills }) => (
+      <div className="grid sm:grid-cols-2 lg:grid-cols-6 gap-6 justify-items-center">
+        {skillCategories.map(({ category, icon, skills }, index) => (
           <motion.div
             key={category}
             variants={fadeUp}
-            className="card p-6 w-full max-w-sm hover:border-primary-400/50 dark:hover:border-primary-600/50 transition-all duration-300 group text-center"
+            className={`card p-6 w-full max-w-sm hover:border-primary-400/50 dark:hover:border-primary-600/50 transition-all duration-300 group text-center col-span-2 ${
+              index === 3 ? 'lg:col-start-2' : ''
+            } ${
+              index === 4 ? 'lg:col-start-4' : ''
+            }`}
           >
             <div className="flex items-center justify-center gap-3 mb-5">
               <span className="text-2xl">{icon}</span>

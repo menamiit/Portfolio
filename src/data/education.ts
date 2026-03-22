@@ -18,4 +18,22 @@ export const education: Education[] = [
     startYear: '2023',
     endYear: 'Present',
   },
+  {
+    id: 2,
+    institution: 'MG Sr Sec School, Jodhpur, Rajasthan',
+    degree: 'Class 12th',
+    field: 'Senior Secondary',
+    startYear: '2021-22',
+    endYear: '2021-22',
+    gpa: '71%',
+  },
+  {
+    id: 3,
+    institution: 'Anant Louis Public School, Jodhpur, Rajasthan',
+    degree: 'Class 10th',
+    field: 'Secondary School',
+    startYear: '2019-20',
+    endYear: '2019-20',
+    gpa: '71%',
+  },
 ]

@@ -14,8 +14,12 @@ export default function Projects() {
       </motion.div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-        {projects.map((project) => (
-          <motion.div key={project.id} variants={fadeUp}>
+        {projects.map((project, index) => (
+          <motion.div
+            key={project.id}
+            variants={fadeUp}
+            className={`${index === 0 ? 'md:col-span-2 lg:col-span-3' : ''}`}
+          >
             <TiltCard className="h-full">
               <div className="card p-4 md:p-6 h-full flex flex-col gap-4 hover:border-primary-400/60 dark:hover:border-primary-600/60 transition-colors duration-300">
                 {/* Header */}
