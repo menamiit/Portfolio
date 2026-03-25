@@ -18,12 +18,12 @@ export default function About() {
       </motion.div>
 
       <div className="grid lg:grid-cols-12 gap-8 md:gap-12 items-center">
-        {/* Avatar / visual side */}
-        <motion.div variants={fadeUp} className="flex justify-center lg:justify-center lg:col-span-5">
+        {/* Avatar / visual side (hidden for now, keeps layout spacing) */}
+        <motion.div variants={fadeUp} className="flex justify-center lg:justify-center lg:col-span-5 invisible" aria-hidden="true">
           <div className="relative group">
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-primary-500 to-accent-400 blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
             <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-3xl overflow-hidden border-2 border-primary-500/30 dark:border-primary-400/30">
-              {/* Placeholder avatar using initials — replace with <img> once you have a photo */}
+              {/* Placeholder avatar using initials - replace with <img> once you have a photo */}
               <div className="w-full h-full bg-gradient-to-br from-primary-600 to-accent-500 flex items-center justify-center">
                 <span className="text-7xl font-bold text-white select-none">Image</span>
               </div>

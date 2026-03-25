@@ -8,7 +8,7 @@ export default function Certifications() {
     <SectionWrapper id="certifications">
       <motion.div variants={fadeUp} className="text-center mb-12">
         <div className="section-divider mx-auto" />
-        <h2 className="section-heading"><span className="gradient-text">Certifications</span></h2>
+        <h2 className="section-heading"><span className="gradient-text">Certificates/Certifications</span></h2>
         <p className="section-subheading">Validated skills and professional credentials</p>
       </motion.div>
 
